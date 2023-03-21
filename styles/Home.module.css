@@ -1,10 +1,15 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem;
   min-height: 100vh;
+  text-align: center;
+}
+
+.space {
+  margin: 2rem 0;
 }
 
 .description {
@@ -76,6 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
   padding: 4rem 0;
 }
