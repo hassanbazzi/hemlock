@@ -11,11 +11,11 @@ const date = new Date("March 22, 2023 21:00:00 EDT");
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
     // Render a completed state
-    return <h2>Next Game is NOW!</h2>;
+    return <h2 className={styles.space}>Next Game is NOW!</h2>;
   } else {
     // Render a countdown
     return (
-      <h2>
+      <h2 className={styles.space}>
         Next Game is in:
         <br /> {days} day{days == 1 ? "" : "s"}, {hours} hour
         {hours == 1 ? "" : "s"}, {minutes} minute{minutes == 1 ? "" : "s"} and{" "}
@@ -40,6 +40,7 @@ export default function Home() {
           <h1 className={styles.space}>Hemlock Soccer</h1>
           <Countdown date={date} renderer={renderer} />
           <h2 className={styles.space}>Location: Taylor Sportsplex</h2>
+          <h2 className={styles.space}>Date: {date.toLocaleString()}</h2>
         </div>
       </main>
     </>
