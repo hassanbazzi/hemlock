@@ -6,7 +6,7 @@ import Countdown from "react-countdown";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const date = new Date("March 22, 2023 21:00:00 EDT");
+const date = new Date("March 28, 2023 18:00:00 EDT");
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
